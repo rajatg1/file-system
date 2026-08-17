@@ -1,0 +1,46 @@
+pytest>=8.0
+pytest-cov>=5.0
+
+# --- Spec notes below (kept for reference) ---
+1. mkdir(path)
+    path is a string. 
+    path will always start from root
+    path can be an empty string
+    if duplicate path then return "OK"
+    output- true if valid else false(empty string)
+    invalid path- /a/b/c///d- return False
+    "/a/b/     f/g"
+    "ab/c/"
+
+2. addContentToFile(path, content)
+   file path - string
+   content - string
+   length of content
+   duplicate content- 
+   empty/no content- 
+   append vs override
+   what if the file does not exist?- create a new file , append
+
+
+3. readContentFromFile(file path)
+   path does not exist
+   empty content
+   path exists but its a directory
+
+
+4. ls(path)
+   path- format
+   path exist- return empty list
+   exist- print folder
+   path of a file? then return the file?
+   
+
+
+5. pwd
+  root- /
+
+
+
+
+
+
